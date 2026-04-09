@@ -1,7 +1,7 @@
 import streamlit as st
 import tensorflow as tf
 
-model_path = 'planters.h5'
+model_path = 'model.h5'
 
 @st.cache_resource
 def load_model():
