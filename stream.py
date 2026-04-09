@@ -1,7 +1,7 @@
 import streamlit as st
 import tensorflow as tf
 
-model_path = r'C:\Users\Win10\OneDrive\Documents\StreamLit_Deploy\bagongDahon.keras'
+model_path = 'bagongDahon.keras'
 
 @st.cache_resource
 def load_model():
