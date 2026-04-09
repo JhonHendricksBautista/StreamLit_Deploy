@@ -1,13 +1,13 @@
 import streamlit as st
 import tensorflow as tf
 
-model_path = 'bagongDahon.keras'
+model_path = 'planters.h5'
 
 @st.cache_resource
 def load_model():
     model = tf.keras.models.load_model(
         model_path,
-        custom_objects={"TrueDivide": tf.keras.layers.Lambda}
+        compile=False
     )
     return model
 model=load_model()
